@@ -39,4 +39,4 @@
 - Run Serve
   - `php artisan serve`
 - Build Vue
-  - `npm run buidl`
+  - `npm run build`
