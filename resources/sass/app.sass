@@ -1,0 +1,39 @@
+// Fonts
+@import url('https://fonts.bunny.net/css?family=Nunito')
+
+// Bootstrap
+@import '../../node_modules/bootstrap/scss/bootstrap.scss'
+
+nav.navbar
+    .navbar-brand
+        padding: 10px
+
+    .navbar-nav
+        display: flex
+        justify-content: start
+        align-content: center
+        flex-wrap: wrap
+        flex-direction: row
+
+        .nav-item
+            text-align: center
+            padding: 10px
+
+    .navbar-toggler
+        &:focus
+            outline: none
+            box-shadow: none
+
+        span.navbar-toggler-icon
+            background-image: none
+            &:after
+                position: relative
+                top: 4px
+                content: "X"
+
+        &.collapsed
+            span.navbar-toggler-icon
+                background-image: var(--bs-navbar-toggler-icon-bg)
+                &:after
+                    display: none
+
